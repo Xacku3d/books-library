@@ -1,0 +1,141 @@
+@import './reset.scss';
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+$body-bg: #EBEBEB;
+$book-bg: rgb(255, 255, 255);
+$font-color: #39393A;
+
+.button,
+.input {
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+.button {
+    cursor: pointer;
+}
+
+body {
+    color: $font-color;
+    font-size: 20px;
+    font-family: 'Nunito',
+    sans-serif;
+    background: $body-bg;
+}
+
+#container {
+    width: 700px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+#addBook {
+    color: $book-bg;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-image: url(https://cdn.lifehacker.ru/wp-content/uploads/2016/02/book2_1505126435-1140x570.jpg);
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px -5px rgba(42, 42, 42, 0.47);
+    input {
+        z-index: 2;
+        margin: 5px 0px 20px 0px;
+        line-height: 30px;
+        background: transparent;
+        border-bottom: 1px solid $book-bg;
+        color: $book-bg;
+    }
+    label {
+        z-index: 2;
+    }
+    button {
+        z-index: 2;
+    }
+}
+
+.addBook__submit {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    margin-top: 13px;
+    font-size: 22px;
+    border: 1px solid $book-bg;
+    border-radius: 5px;
+    background: transparent;
+    color: $book-bg;
+    transition: .2s;
+    &:hover {
+        background-color: $book-bg;
+        color: $font-color;
+    }
+}
+
+.books__item {
+    display: flex;
+    background-color: $book-bg;
+    margin: 10px 0px;
+    padding: 15px;
+    min-height: 120px;
+    box-shadow: 0px 0px 12px -5px rgba(42, 42, 42, 0.47);
+    border-radius: 5px;
+    h3 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+.books__item__info {
+    display: flex;
+    flex: 3;
+    width: 70%;
+    flex-direction: column;
+    border-right: rgb(194, 194, 194) 1px solid;
+    border-left: rgb(194, 194, 194) 1px solid;
+    padding: 5px;
+    padding-left: 10px;
+    margin-right: 15px;
+    h3 {
+        word-wrap: break-word;
+    }
+}
+
+.book__buttons {
+    display: flex;
+    flex-direction: column;
+    button {
+        width: 100px;
+        height: 30px;
+        background: transparent;
+        border-radius: 3px;
+        transition: .2s;
+        margin: auto;
+    }
+}
+
+.book_removing {
+    border: 1px solid red;
+    color: red;
+    &:hover {
+        background: red;
+        color: $book-bg;
+    }
+}
+
+.book_editing {
+    border: 1px solid green;
+    color: green;
+    &:hover {
+        background: green;
+        color: $book-bg;
+    }
+}
+
+#unecode {
+    transition: .3s;
+    &:hover {
+        color: #9AC2C9;
+    }
+}
