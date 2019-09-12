@@ -40,18 +40,11 @@ body {
     border-radius: 5px;
     box-shadow: 0px 0px 12px -5px rgba(42, 42, 42, 0.47);
     input {
-        z-index: 2;
         margin: 5px 0px 20px 0px;
         line-height: 30px;
         background: transparent;
         border-bottom: 1px solid $book-bg;
         color: $book-bg;
-    }
-    label {
-        z-index: 2;
-    }
-    button {
-        z-index: 2;
     }
 }
 
